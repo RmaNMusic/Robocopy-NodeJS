@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "powershell": "^2.3.2"
+  },
+  "name": "robocopy",
+  "version": "1.0.0",
+  "main": "robocopy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "RmaN",
+  "license": "ISC",
+  "description": ""
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robocopy Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+
+    <div class="wrapper">
+        <h2>Robopy GUI</h2>
+        <form action="/robocopy" method="post">
+    
+          <div class="input-box">
+            <input type="text" name="SourcePath" id="SourcePath" placeholder="Source Path" required>
+          </div>
+          <div class="input-box">
+            <input type="text" name="TargetPath" id="TargetPath" placeholder="Target Path" required>
+          </div>
+
+
+          <label for="UnrealEngineProject"> Unreal Project? </label>
+          <div class="input-box">
+            <input type="checkbox" name="UnrealProject" id="UnrealEngineProject" value="off">
+          </div>
+
+
+          <div class="input-box button" id="RobocopyButton">
+            <button type="submit" name="submit">Robocopy</button>  
+          </div>
+    
+
+        
+        </form>
+    </div>
+
+    <script src="jquery-3.6.4.min.js"></script>
+    <script>
+
+      $(":checkbox").on("click", function () {
+          console.log(this.value);
+          if (this.value === "off") {
+              this.value = "on";
+          }
+          else if (this.value === "on"){
+              this.value = "off";
+          }
+          else{
+              
+          }
+          console.log(this.value);
+      })
+
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+  
